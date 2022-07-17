@@ -10,7 +10,7 @@ const ContactPage = ({ }) => {
         <div className={contactPage}>
             <h2>About me</h2>
             <ul className={aboutUl}>
-                    <li>{"I'm a front end developer who is based in <strong>London,Orpington.</strong>"}</li>
+                    <li>{"I'm a front end developer who is based in <strong>London,Orpington.</strong>" }</li>
                     <li> I love sports, especially football and basketball.</li>
                     <li>I took an interest in programming as I have a curious mind and want to keep learning.</li>
                     <li>I like solving problems and very keen on details. I aim to keep learning so I can become a full stack developer !</li>
