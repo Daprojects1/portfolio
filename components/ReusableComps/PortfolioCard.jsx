@@ -27,7 +27,7 @@ const PortfolioCard = ({ title, imgSrc, description, technologies, githubLink, w
         <>
            <div className={portfolioCard}>
                 <h2>{ title}</h2>
-                <img src={imgSrc} />
+                <img src={imgSrc} alt='project image'/>
                 <div className={accessProject}>
                     <GithubIcon width={30} height={30} className={githubIcon} onClick={()=>handleReRoute(githubLink)} />
                     <FontAwesomeIcon icon={faPlay} className={genFont} onClick={()=>handleReRoute(websiteLink)} />
