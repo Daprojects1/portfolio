@@ -4,6 +4,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color:#f5f5f5;
+      background: url("/mainbg1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      min-height: 100%;
 }
 
 a {
@@ -13,4 +20,39 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.mainBody{
+  width: 90vw;
+  max-width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.navBody{
+  display: flex;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid black;
+  overflow-y: scroll;
+}
+
+.TechIcon{
+  display: flex;
+  flex-direction: column;
+}
+
+.TechIcon .iconType{
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.getInTouch{
+  margin: 20px 0 0;
+}
+
+@media screen and (min-width:900px){
+  .TechIcon .iconType{
+    font-size: 15px;
+  }
 }

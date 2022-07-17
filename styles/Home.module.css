@@ -1,116 +1,437 @@
 .container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  width: 80vw;
+  max-width: 1200px;
+  margin: 35px auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 25px;
 }
 
-.footer {
+.mainNav{
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  gap: 10px;
   justify-content: center;
-  align-items: center;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.mainNav ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  gap: 30px;
 }
-
-.title a {
-  color: #0070f3;
+.mainUl li{
+  /* color: rgb(223, 220, 220); */
+  background: rgba(184, 172, 172,0.5);
+  text-align: center;
+  list-style-type: none;
+  width: 150px;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 300;
   text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.navFonts{
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+
+.pageBody{
+  width: 100%;
+  height: 550px;
+  background: rgba(184, 172, 172,0.5);
+  border-radius: 10px;
+  padding: 25px;
+  overflow-y: scroll;
 }
 
-.title,
-.description {
+.home{
+  width: 100%;
+  height: 100%;
+}
+.introCard{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+
+  /* background-color: rgb(176, 138, 113);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  border-radius: 30px; */
+}
+
+.hi{
+  font-size: 25px;
+  /* background-color: black;
+  color: white;
+  padding:10px 15px;
+  border-radius: 5px;
+  border: 1px solid white; */
+  /* display: block; */
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+.introCard p{
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-weight: 300;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.introParagraphs{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-@media (max-width: 600px) {
-  .grid {
+
+.secondPara{
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: 1.3px;
+  align-self: center;
+  word-break: normal;
+  /* border: 1px solid white; */
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  /* background-color: #ffe4c4; */
+
+}
+
+
+.introP{
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin-right: auto;
+}
+
+/* Button Styles */
+.introBtn{
+  padding-top: 40px;
+}
+
+.introBtn button{
+  padding: 20px;
+  background: black;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+}
+
+
+/* PORTFOLIO */
+.portfolioBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.portfolioCard{
+  width: 100%;
+  height: 400px;
+  background: rgba(190, 190, 190,0.5);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+.portfolioCard img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top top;
+  border-radius: 5px;
+}
+
+.portfolioCard h2{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 25px;
+}
+
+.portfolioCard p{
+  text-align: center;
+}
+.accessProject{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Modal styles */
+.projectsModal{
+  width: 85vw;
+  max-width: 600px;
+  height: 500px;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.projectsModal .react-responsive-modal-modal{
+  border-color: aliceblue;
+}
+.modalBody{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 500px;
+  overflow-y: hidden;
+}
+
+.modalBody h2{
+  text-align: center;
+  font-weight: 300;
+  font-size:20px;
+}
+
+.modalBody p{
+  font-size: 20px;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+
+.technologiesBody h3{
+  font-weight: 300;
+  font-size: 20px;
+  /* text-decoration: underline;
+  text-underline-offset: 5px; */
+}
+
+.technologiesBody ul{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 0;
+  margin-top: 40px;
+}
+.technologiesBody ul li{
+  list-style: none;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+/* Icons */
+
+.githubIcon:hover{
+  color: lightgray;
+}
+
+.genFont{
+  width: 30px;
+  height: 30px;
+}
+.genFont:hover{
+  color: lightgray;
+}
+
+/* Experience Page */
+.experiencePage h2{
+  font-weight: 300;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  /* margin: 30px 0 10px; */
+}
+
+.relevantExperience{
+  margin-top: 20px;
+}
+.relevantExperience p{
+  /* margin-top: 30px; */
+  margin: 0;
+}
+
+.relevantExperience ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 300;
+}
+
+.skillsBody{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.skillsBody .genFont{
+  margin: 0 auto;
+}
+/*  */
+
+.borderWhite{
+  border: 1px solid white;
+}
+
+/* Contact page */
+.contactPage {
+  /* max-width: 800px; */
+  width: 100%;
+  /* margin: 0 auto; */
+}
+.contactPage h2 {
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+}
+.contactPage p{
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+}
+
+.aboutUl{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 300;
+}
+.textContact{
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 0;
+  /* padding: 20px; */
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  gap: 50px;
+  position: relative;
+}
+
+.textContact .contactMe{
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+}
+
+.textContact svg{
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width:900px){
+  .pageBody{
+    padding: 60px;
+  }
+
+  .introP{
+    font-size: 25px;
+  }
+
+  .hi{
+    font-size: 35px;
+    /* display: inline; */
+    padding: 10px 20px;
+
+  }
+  .firstPara{
+    font-size: 40px;
+    width: 500px;
+    align-self: center;
+  }
+  .secondPara{
+    font-size: 20px;
+    border:none;
+    border-radius: 0;
+    padding: 30px 0 0 ;
+
+  }
+  .mainUl li{
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+
+  .mainNav ul{
+    display: flex;
+    gap: 30px;
+  }
+  .mainNav ul li:hover{
+    transform: scale(1.2);
+  }
+
+  .navFonts{
+    width: 30px;
+    height: 30px;
+  }
+  .introBtn{
+    border-top: 1px solid white;
     width: 100%;
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  .introBtn button:hover{
+    border: 1px solid white;
+  }
+
+
+/* PORTFOLIO */
+  .portfolioBody{
+    flex-direction: row;
+  }
+  .portfolioCard{
+    width: 400px;
+  }
+
+  .modalBody h2{
+    font-size: 35px;
+  }
+
+  .modalBody p{
+    font-size: 30px;
+  }
+  .technologiesBody h3{
+    font-weight: 300;
+    font-size: 25px;
+  }
+  .technologiesBody ul{
+    flex-direction: row;
+    justify-content: flex-start;
+
+  }
+  .experiencePage h2{
+    font-size: 25px;
+  }
+
+  .textContact svg{
+    width: 50px;
+    height: 50px;
+  }
+
+  .textContact{
+
+  }
+  .contactPage h2 {
+    font-size: 25px;
   }
 }
+
