@@ -24,7 +24,7 @@ const descriptions = {
         src:'/snake.jpg',
         text: `A rendition of the popular oldschool snake game!`,
         tech: ['Html','Css','Javascript'],
-        githubLink: 'https://github.com/Daprojects1/search-engine',
+        githubLink: 'https://github.com/Daprojects1/Snake',
         websiteLink:'https://daprojects1.github.io/Snake/'
     }
 }
